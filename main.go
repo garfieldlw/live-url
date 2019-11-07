@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/garfieldlw/live-url/routers"
 	"github.com/gin-gonic/gin"
-	"live-url/routers"
 )
 
 func main() {

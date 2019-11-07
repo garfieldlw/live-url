@@ -1,11 +1,11 @@
 package controllers
 
 import (
+	"fmt"
+	"github.com/garfieldlw/live-url/lib"
+	"github.com/garfieldlw/live-url/page/service/url"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"live-url/lib"
-	"live-url/page/service/url"
-	"fmt"
 )
 
 type UrlController struct {
@@ -13,7 +13,7 @@ type UrlController struct {
 
 func (controller *UrlController) GetLiveUrl(c *gin.Context) {
 	validateMap := map[string]string{
-		"uri":  "not-nil",
+		"uri": "not-nil",
 	}
 	resMap, errGet := lib.ValidateGetData(validateMap, c)
 	if errGet != nil {

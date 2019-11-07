@@ -1,10 +1,10 @@
 package lib
 
 import (
-	"github.com/gin-gonic/gin"
-	"fmt"
 	"crypto/md5"
 	"encoding/hex"
+	"fmt"
+	"github.com/gin-gonic/gin"
 )
 
 func ValidateGetData(keyMap map[string]string, c *gin.Context) (map[string]string, error) {
@@ -24,7 +24,6 @@ func ValidateGetData(keyMap map[string]string, c *gin.Context) (map[string]strin
 	}
 	return returnMap, nil
 }
-
 
 func Md5(input []byte) string {
 	hash := md5.Sum(input)

@@ -1,8 +1,8 @@
 package routers
 
 import (
+	"github.com/garfieldlw/live-url/controllers"
 	"github.com/gin-gonic/gin"
-	"live-url/controllers"
 )
 
 func LoadRouter(engine *gin.Engine) {

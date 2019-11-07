@@ -1,10 +1,10 @@
 package url
 
 import (
-	"live-url/page/service/url/extractors"
+	"errors"
+	"github.com/garfieldlw/live-url/page/service/url/extractors"
 	"net/url"
 	"strings"
-	"errors"
 )
 
 func GetLiveUrl(uri string) (*extractors.LiveInfo, error) {
